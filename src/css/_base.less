@@ -1,0 +1,141 @@
+@import 'fonts';
+@import 'variables';
+
+//
+//  Common
+
+h1,h2,h3 {
+    font-family: Roboto Slab, sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 56px;
+}
+
+h2 {
+    font-size: @indent__m;
+    line-height: 28px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+body {
+    font-family: Open Sauce, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: @indent__l;
+}
+
+p {
+    font-family: Open Sauce, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+//
+//  Buttons
+//  ---------------------------------------------
+.lib-button (
+    @_button-border-style: @button-border-style,
+    @_button-border-radius: @button-border-radius
+) {
+    border-style: @_button-border-style;
+    border-radius: @_button-border-radius;
+}
+
+.button {
+    .lib-button(solid, @button-border-radius);
+    border-width: 1px;
+    font-family: "Open Sauce", sans-serif;
+    font-size: @button-font-size;
+    font-weight: @button-font-weight;
+    height: 44px;
+    line-height: @button-line-height;
+    padding: @button-padding;
+
+    > .btn-icon {
+        height: @indent__s;
+        margin-right: @indent__m;
+    }
+
+    &.primary {
+        background-color: @button-primary-color;
+        border-color: @button-primary-color;
+        color: @button-primary-font-color;
+    }
+
+    &.secondary {
+        background-color: @button-secondary-color;
+        border-color: @button-secondary-border-color;
+        color: @button-secondary-font-color;
+    }
+}
+
+//
+//  Pagination
+//  ---------------------------------------------
+
+.lib-pagination-button (
+    @_pagination-button__background-color: @button-secondary-color,
+    @_border-color: @button-secondary-border-color
+) {
+    background-color: @_pagination-button__background-color;
+    border-color:  @_border-color;
+}
+
+.pagination-button {
+    .lib-pagination-button(@button-secondary-color, transparent);
+    border-radius: 50%;
+    color: @button-secondary-font-color;
+    height: 44px;
+    padding: @indent__xs @indent__s;
+    width: 44px;
+}
+
+//
+//  Desktop
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: @indent__l;
+        line-height: @indent__xl;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    body {
+        font-size: 14px;
+        line-height: @indent__l;
+        background-color: #F8F8F8;
+    }
+
+    //
+    //  Buttons
+    //  ---------------------------------------------
+
+    .button {
+        font-size: 15px;
+        height: @indent__xxl;
+        line-height: @indent__l;
+        padding: @button-desktop-padding;
+    }
+
+    //
+    //  Pagination
+    //  ---------------------------------------------
+
+    .pagination-button {
+        height: @indent__xxl;
+        padding: @indent__xs @indent__s;
+        width: @indent__xxl;
+    }
+}

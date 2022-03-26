@@ -1,0 +1,6 @@
+{
+  "watchFolder": "src/css",
+  "outputFolder": "dist/css",
+  "mainFile": "main.less",
+  "sourceMap": true
+}

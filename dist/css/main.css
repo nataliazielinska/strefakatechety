@@ -1,0 +1,228 @@
+@font-face {
+  font-family: "Open Sauce";
+  src: url('../fonts/Open-Sauce/static/OpenSauceOne-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Open Sauce";
+  src: url('../fonts/Open-Sauce/static/OpenSauceOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sauce";
+  src: url('../fonts/Open-Sauce/static/OpenSauceOne-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sauce";
+  src: url('../fonts/Open-Sauce/static/OpenSauceOne-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sauce";
+  src: url('../fonts/Open-Sauce/static/OpenSauceOne-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Open Sauce";
+  src: url('../fonts/Open-Sauce/static/OpenSauceOne-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Open Sauce";
+  src: url('../fonts/Open-Sauce/static/OpenSauceOne-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url('../../dist/fonts/Roboto-Slab/static/RobotoSlab-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Roboto Slab";
+  src: url('../../dist/fonts/Roboto-Slab/static/RobotoSlab-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url('../../dist/fonts/Roboto-Slab/static/RobotoSlab-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url('../../dist/fonts/Roboto-Slab/static/RobotoSlab-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url('../../dist/fonts/Roboto-Slab/static/RobotoSlab-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url('../../dist/fonts/Roboto-Slab/static/RobotoSlab-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+@font-face {
+  font-family: Roboto Slab;
+  src: url('../../dist/fonts/Roboto-Slab/static/RobotoSlab-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+.button:hover.primary {
+  background-color: #339DFF;
+  border-color: #339DFF;
+}
+.button:hover.secondary,
+.button:hover.pagination-button {
+  border-color: #908F8F;
+}
+.button:active.primary {
+  background-color: #006DD2;
+  border-color: #006DD2;
+}
+.button:active.pagination-button {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+.button.disable.primary,
+.button.disable.pagination-button {
+  background-color: #DFDFDF;
+  border-color: #DFDFDF;
+}
+.pagination-button.is-active {
+  border-color: #CFCFCF;
+}
+h1,
+h2,
+h3 {
+  font-family: Roboto Slab, sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-size: 40px;
+  line-height: 56px;
+}
+h2 {
+  font-size: 20px;
+  line-height: 28px;
+}
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+}
+body {
+  font-family: Open Sauce, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+}
+p {
+  font-family: Open Sauce, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.button {
+  border-style: solid;
+  border-radius: 40px;
+  border-width: 1px;
+  font-family: "Open Sauce", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 44px;
+  line-height: 20px;
+  padding: 12px 20px;
+}
+.button > .btn-icon {
+  height: 16px;
+  margin-right: 20px;
+}
+.button.primary {
+  background-color: #007DF0;
+  border-color: #007DF0;
+  color: #FFFFFF;
+}
+.button.secondary {
+  background-color: transparent;
+  border-color: #CFCFCF;
+  color: #242424;
+}
+.pagination-button {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 50%;
+  color: #242424;
+  height: 44px;
+  padding: 12px 16px;
+  width: 44px;
+}
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  body {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #F8F8F8;
+  }
+  .button {
+    font-size: 15px;
+    height: 48px;
+    line-height: 24px;
+    padding: 12px 24px;
+  }
+  .pagination-button {
+    height: 48px;
+    padding: 12px 16px;
+    width: 48px;
+  }
+}
+a:link {
+  text-decoration: none;
+  color: #242424;
+}
+a:hover {
+  text-decoration: none;
+  color: #242424;
+}
+a:visited {
+  text-decoration: none;
+  color: #242424;
+}
+.header.panel {
+  align-items: center;
+  border-bottom: 1px solid #DFDFDF;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 12px;
+}
+.header.panel > .panel-header-item {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header.panel > .panel-header-item > li {
+  margin-right: 40px;
+}
+.header.panel > .panel-header-item > li:last-child {
+  margin-right: 0;
+}
+.header.panel > .panel-header-item > li.header-shop {
+  display: flex;
+}
+.header.panel > .panel-header-item > li.header-shop .header-go-to {
+  height: 18px;
+  margin-left: 13px;
+  width: 18px;
+}
+@media screen and (max-width: 768px) {
+  .header.panel {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */

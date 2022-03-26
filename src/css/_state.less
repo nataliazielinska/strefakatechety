@@ -1,0 +1,58 @@
+@import 'variables';
+@import 'fonts';
+
+//
+//  Variables
+//  ---------------------------------------------
+@button-primary-hover-color: #339DFF;
+@button-primary-active-color: #006DD2;
+@button-primary-disabled-color: @color-gray-light;
+@button-secondary-hover-color: @color-gray-dark;
+
+//
+//  Common
+//  ---------------------------------------------
+
+    .button:hover {
+        &.primary {
+            background-color: @button-primary-hover-color;
+            border-color: @button-primary-hover-color;
+        }
+        &.secondary,
+        &.pagination-button {
+            border-color: @button-secondary-hover-color;
+        }
+    }
+
+    .button:active {
+        &.primary {
+            background-color: @button-primary-active-color;
+            border-color: @button-primary-active-color;
+        }
+        &.pagination-button {
+            background-color: @color-white;
+            border-color: @color-white;
+        }
+    }
+
+    .button.disable {
+        &.primary,
+        &.pagination-button {
+            background-color: @button-primary-disabled-color;
+            border-color: @button-primary-disabled-color;
+        }
+    }
+
+    .pagination-button {
+        &.is-active {
+            border-color: @button-secondary-border-color;
+        }
+    }
+
+//
+//  Desktop
+//  ---------------------------------------------
+
+@media screen and (min-width: 768px) {
+
+}
